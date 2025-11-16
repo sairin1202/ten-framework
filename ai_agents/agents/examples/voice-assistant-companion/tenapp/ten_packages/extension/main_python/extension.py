@@ -59,8 +59,8 @@ class MainControlExtension(AsyncExtension):
         self.memu_api_key: str = os.getenv("MEMU_API_KEY", "")
         self.memu_base_url: str = "https://api.memu.so"
         self.conversation_history: list = []
-        self.user_id: str = "default_user"
-        self.agent_id: str = "companion_001"
+        self.user_id: str = "user_001"
+        self.agent_id: str = "agent_001"
 
     async def on_init(self, ten_env: AsyncTenEnv):
         self.ten_env = ten_env
@@ -250,11 +250,15 @@ class MainControlExtension(AsyncExtension):
         This is typically called when the first user joins.
         Retrieves user memories from Memu and includes them in the greeting context.
         """
+        # Debug: Log the condition check
+        self.ten_env.log_info(f"[MainControlExtension] _greeting_if_ready check: rtc_user_count={self._rtc_user_count}, has_greeting={bool(self.config.greeting)}, session_ready={self.session_ready}")
+        
         if (
             self._rtc_user_count == 1
             and self.config.greeting
             and self.session_ready
         ):
+            self.ten_env.log_info("[MainControlExtension] All conditions met, retrieving memories...")
             # Retrieve memories from Memu
             memory_context = await self._retrieve_memories_from_memu()
             self.ten_env.log_info(f"[MainControlExtension] Memory context retrieved: {memory_context[:200] if memory_context else 'None'}...")
