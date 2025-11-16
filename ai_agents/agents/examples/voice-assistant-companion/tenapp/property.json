@@ -29,7 +29,7 @@
               "addon": "main_python",
               "extension_group": "control",
               "property": {
-                "greeting": "Hi! I'm your AI companion. I'm here to chat, listen, and help. How are you feeling today?"
+                "greeting": ""
               }
             },
             {

@@ -4,8 +4,8 @@
     {
       "type": "system",
       "name": "ten_runtime_go",
-      "version": "0.11.26",
-      "hash": "57a8127cbde0e7201994354bec90d33b3110969799c5e66eefda4a8a7142972c",
+      "version": "0.11.30",
+      "hash": "8b4ee8244b45b996751d0abf14ed5e329bcb30914b18c5b6807cca0764a0ddb9",
       "dependencies": [
         {
           "type": "system",
@@ -188,8 +188,8 @@
     {
       "type": "system",
       "name": "ten_runtime_python",
-      "version": "0.11.26",
-      "hash": "8b8423f1107db72ab65989fa65fdd60a579bcdd7169c7fcf2d7bb9452dff13e8",
+      "version": "0.11.30",
+      "hash": "bb88c47ac2ae3df4d8e5ff2a5497c91a5160b30732f72db84e74f07c182bbd93",
       "dependencies": [
         {
           "type": "system",
@@ -210,8 +210,8 @@
     {
       "type": "system",
       "name": "ten_runtime",
-      "version": "0.11.26",
-      "hash": "cd1c17ea70795e7ca55d8e86d838ad9386222a3e0405d4090c5fae557d5db7f0",
+      "version": "0.11.30",
+      "hash": "6b19913b630ca05b2d2d83389353f0d4d9683d964e499dc8b8e9c46b88cc8bef",
       "supports": [
         {
           "os": "linux",
@@ -234,8 +234,8 @@
     {
       "type": "addon_loader",
       "name": "python_addon_loader",
-      "version": "0.11.26",
-      "hash": "04e54e33490b519098425e8d347ce6e9707e6204a6efb12a04d535937e578016",
+      "version": "0.11.30",
+      "hash": "bcac072cad078a302fac73cdbcb7ac80ec759f10f10f20cf9eb2f63038503bd9",
       "dependencies": [
         {
           "type": "system",
